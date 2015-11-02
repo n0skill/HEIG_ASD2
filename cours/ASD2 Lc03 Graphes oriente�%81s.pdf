@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="fr" xml:lang="fr">
+
+<head>
+    <title>ASD2 (Algorithmes et Structures de Données 2)</title>
+    <link rel="shortcut icon" href="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/theme/1443627111/favicon" />
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, ASD2 (Algorithmes et Structures de Données 2)" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/cyberlearn.hes-so.ch","sesskey":"amj3NSTFsN","loadingicon":"https:\/\/cyberlearn.hes-so.ch\/theme\/image.php\/cyberlearn\/core\/1443627111\/i\/loading_small","themerev":"1443627111","slasharguments":1,"theme":"cyberlearn","jsrev":"1443627111","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"https:\/\/cyberlearn.hes-so.ch\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/cyberlearn.hes-so.ch\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/cyberlearn.hes-so.ch\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/cyberlearn.hes-so.ch\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/cyberlearn.hes-so.ch\/theme\/yui_combo.php?m\/1443627111\/","combine":true,"comboBase":"https:\/\/cyberlearn.hes-so.ch\/theme\/yui_combo.php?","ext":false,"root":"m\/1443627111\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/cyberlearn.hes-so.ch\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/cyberlearn.hes-so.ch\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1443627111\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/cyberlearn.hes-so.ch\/lib\/javascript.php\/1443627111\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="https://cyberlearn.hes-so.ch/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script type="text/javascript" src="https://cyberlearn.hes-so.ch/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1443627111/mcore-min.js"></script><script type="text/javascript" src="https://cyberlearn.hes-so.ch/theme/jquery.php/core/jquery-1.11.2.min.js"></script>
+<script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://cyberlearn.hes-so.ch/theme/styles.php/cyberlearn/1443627111/all" />
+<script type="text/javascript" src="https://cyberlearn.hes-so.ch/lib/javascript.php/1443627111/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://cyberlearn.hes-so.ch/theme/javascript.php/cyberlearn/1443627111/head"></script>
+
+<meta name="description" content="Bienvenue sur la plateforme Moodle de la hes-so. Moodle est un outil de e-learning permettant aux professeurs de proposer des supports de cours en ligne, de tests en ligne et bien d'autres choses" />    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+
+			//$( "#shower" ).click(function() {
+			$( document ).ready(function() {
+				var headerSearchLabel = $("#headersearchboxlabel");
+				var headerSearchInput = $("#headershortsearchbox");
+				var searchLabel = $("#coursesearch label");
+				var searchInput = $("#coursesearch #shortsearchbox");
+				var coursesearchInput = $("#coursesearch #coursesearchbox");
+				//alert('coursesearchInput.val()' + coursesearchInput.val());
+				
+				
+				if(coursesearchInput.val()=='' || coursesearchInput.val() == null )
+				{
+					searchLabel.show();
+				}
+				else
+				{
+					searchLabel.hide();
+					//alert('hide');
+				}
+				
+				searchLabel.insertAfter(searchInput);
+				searchLabel.insertAfter(coursesearchInput);
+				
+				searchInput.focus(function() {
+					focusFunction(searchLabel);
+				});	
+				coursesearchInput.focus(function() {
+					focusFunction(searchLabel);
+				});	
+				searchInput.blur(function() {
+					blurFunction(searchInput, searchLabel);
+				});
+				coursesearchInput.blur(function() {
+					blurFunction(coursesearchInput, searchLabel);
+				});
+				
+				
+				headerSearchInput.focus(function() {
+					focusFunction(headerSearchLabel);
+				});	
+				
+				headerSearchInput.blur(function() {
+					blurFunction(headerSearchInput, headerSearchLabel);
+				});
+				
+				
+				function focusFunction(t) {
+					t.hide();
+				};
+				
+				function blurFunction(x,t) {
+					if(x.val()=='' || x.val() == null )
+					{
+						t.show();
+					}
+				};
+			});
+			
+
+			
+			
+			function focusFunction1(x,t) {
+				
+				//document.getElementById(t).style.display = 'none';
+				$("#"+t+"").hide();
+				
+				//x.style.display = 'none';
+				
+			}
+			function blurFunction1(x,t) {
+				if(x.value=='' || x.value == null )
+				{
+					$("#"+t+"").show();
+					//document.getElementById(t).style.display = 'initial';
+					
+				}
+				//x.style.display = 'initial';
+			}
+		</script>
+</head>
+<body  id="page-enrol-index" class="format-topics  path-enrol dir-ltr lang-fr yui-skin-sam yui3-skin-sam cyberlearn-hes-so-ch pagelayout-incourse course-7704 context-708310 category-28 two-column has-region-side-pre used-region-side-pre side-pre-only">
+
+<div class="skiplinks"><a class="skip" href="#maincontent">Passer au contenu principal</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar notfrontpage">
+
+	<div id="pageheader">
+	<div id="pageheaderContenu">
+                				
+
+        <div id="pageheader-top-left">
+					<div id="headerlangmenu">
+						<ul class="nav"><li class="dropdown langmenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Langue">fr<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Deutsch (de)" href="https://cyberlearn.hes-so.ch/enrol/index.php?id=7704&amp;lang=de">de</a></li><li><a title="English (en)" href="https://cyberlearn.hes-so.ch/enrol/index.php?id=7704&amp;lang=en">en</a></li><li><a title="Français (fr)" href="https://cyberlearn.hes-so.ch/enrol/index.php?id=7704&amp;lang=fr">fr</a></li></ul></ul>					</div>
+					<div id="headersearchbox">
+						<form id="headercoursesearch" action="https://cyberlearn.hes-so.ch/course/search.php" method="get">
+						<input type="text" id="headershortsearchbox" size="12" name="search" />
+						<label id="headersearchboxlabel" for="headershortsearchbox">Rechercher des cours</label><input type="submit" value="Valider" /></form>
+					</div>
+					 <div class="cleaner">&nbsp;</div>
+				</div>
+						
+        <div id="pageheader-top-right">				<div class="usermenu"><span class="login">Vous êtes connecté anonymement (<a href="https://cyberlearn.hes-so.ch/login/index.php">Connexion</a>)</span></div></div>
+        <div class="cleaner">&nbsp;</div>
+				
+
+        <div class="headermenu"></div>
+			</div>
+		</div>
+		<div id="pageHeaderMenu">
+			<div id="pageHeaderMenuContenu">
+				<div id="pageheader-menu-left">
+					<a href="#" id="pull">Menu</a>
+					<ul id="menu">
+						<li id="menu1"><a href="http://blog.cyberlearn.ch/" target="_blank">Blog</a></li>
+						<li id="menu2"><a href="http://elearning.hes-so.ch/fr/team-cyberlearn-5268.html" target="_blank">Equipe</a></li>
+						<li id="menu3"><a href="http://elearning.hes-so.ch/fr/contact-5403.html" target="_blank">Contact</a></li>
+					</ul>
+					
+									</div>
+        <div id="pageheader-menu-right"><a id="logo" href="https://cyberlearn.hes-so.ch/?redirect=0"></a></div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+
+
+          <div id="navbarMenu"> 
+						 <div id="page-navbar" class="clearfix">
+                <nav class="breadcrumb-nav"><ul class="breadcrumb"><li style="z-index:99;"><a href="https://cyberlearn.hes-so.ch/">Accueil</a></li><li style="z-index:98;"><a href="https://cyberlearn.hes-so.ch/course/index.php">Cours</a></li><li style="z-index:97;"><a href="https://cyberlearn.hes-so.ch/course/index.php?categoryid=28">Technologies de l'information et de la communication</a></li><li style="z-index:96;"><a title="15_HES-SO-VD_ASD2 (Algorithmes et Structures de Données 2)" href="https://cyberlearn.hes-so.ch/course/view.php?id=7704">ASD2 (Algorithmes et Structures de Données 2)</a></li><li style="z-index:95;"><span tabindex="0">Options d'inscription</span></li></ul></nav>
+                <div class="breadcrumb-button"> </div>
+								
+            </div>
+					</div>
+
+</header>
+
+<div id="page" class="container-fluid">
+    <div id="page-content-header"></div>
+		<div id="page-content" class="row-fluid">
+        <section id="region-main" class="span9 pull-right">
+            <div role="main"><span id="maincontent"></span><h2>Options d'inscription</h2><div class="box generalbox info"><div class="coursebox clearfix" data-courseid="7704" data-type="1"><div class="info"><h3 class="coursename"><a class="" href="https://cyberlearn.hes-so.ch/course/view.php?id=7704">15_HES-SO-VD_ASD2 (Algorithmes et Structures de Données 2)</a></h3><div class="moreinfo"></div><div class="enrolmenticons"><img alt="Auto-inscription" class="smallicon" title="Auto-inscription" src="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/enrol_self/1443627111/withkey" /></div></div><div class="content"><ul class="teachers"><li>Professeur-e: <a href="https://cyberlearn.hes-so.ch/user/view.php?id=87882&amp;course=1">Marcel Graf</a></li><li>Professeur-e: <a href="https://cyberlearn.hes-so.ch/user/view.php?id=86496&amp;course=1">Laura Elena Raileanu</a></li></ul></div></div></div><div class="box generalbox">Les visiteurs anonymes ne peuvent pas accéder à ce cours. Veuillez vous connecter.<div class="continuebutton"><form method="get" action="https://cyberlearn.hes-so.ch/login/index.php"><div><input type="submit" value="Continuer" /></div></form></div></div></div>        </section>
+        <aside id="block-region-side-pre" class="span3 desktop-first-column block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="skip-block">Sauter Navigation</a><div id="inst76847" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="76847" aria-labelledby="instance-76847-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-76847-header">Navigation</h2></div></div><div class="content"><ul class="block_tree list"><li class="type_unknown depth_1 contains_branch" aria-expanded="true"><p class="tree_item branch canexpand navigation_node"><a href="https://cyberlearn.hes-so.ch/">Accueil</a></p><ul><li class="type_course depth_2 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span title="Moodle HES-SO" tabindex="0">Pages du site</span></p><ul><li class="type_unknown depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://cyberlearn.hes-so.ch/blog/index.php"><img alt="" class="smallicon navicon" title="" src="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/core/1443627111/i/navigationitem" /><span class="item-content-wrap">Blogs du site</span></a></p></li><li class="type_setting depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://cyberlearn.hes-so.ch/tag/search.php"><img alt="" class="smallicon navicon" title="" src="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/core/1443627111/i/navigationitem" /><span class="item-content-wrap">Tags</span></a></p></li><li class="type_custom depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://cyberlearn.hes-so.ch/calendar/view.php?view=month"><img alt="" class="smallicon navicon" title="" src="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/core/1443627111/i/navigationitem" /><span class="item-content-wrap">Calendrier</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-expanded="true"><p class="tree_item branch"><span tabindex="0">Cours actuel</span></p><ul><li class="type_course depth_3 item_with_icon current_branch"><p class="tree_item leaf hasicon active_tree_node"><a title="15_HES-SO-VD_ASD2 (Algorithmes et Structures de Données 2)" href="https://cyberlearn.hes-so.ch/course/view.php?id=7704"><img alt="" class="smallicon navicon" title="" src="https://cyberlearn.hes-so.ch/theme/image.php/cyberlearn/core/1443627111/i/navigationitem" /><span class="item-content-wrap">ASD2 (Algorithmes et Structures de Données 2)</span></a></p></li></ul></li><li class="type_system depth_2 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch" id="expandable_branch_0_courses"><a href="https://cyberlearn.hes-so.ch/course/index.php">Cours</a></p></li></ul></li></ul></div></div><span id="sb-1" class="skip-block-to"></span></aside>    </div>
+
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://cyberlearn.hes-so.ch/lib/requirejs.php/1443627111/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+
+    paths: {
+        jquery: 'https://cyberlearn.hes-so.ch/lib/javascript.php/1443627111/lib/jquery/jquery-1.11.2.min',
+        jqueryui: 'https://cyberlearn.hes-so.ch/lib/javascript.php/1443627111/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'https://cyberlearn.hes-so.ch/lib/javascript.php/1443627111/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://cyberlearn.hes-so.ch/lib/javascript.php/1443627111/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://cyberlearn.hes-so.ch/theme/javascript.php/cyberlearn/1443627111/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Modifi\u00e9 le","name":"Nom","error":"Erreur","info":"Information","viewallcourses":"Afficher tous les cours","morehelp":"Plus d'aide","loadinghelp":"Chargement...","cancel":"Annuler","yes":"Oui","confirm":"Confirmer","no":"Non","areyousure":"En \u00eates-vous bien s\u00fbr\u00a0?","closebuttontitle":"Fermer","unknownerror":"Erreur inconnue"},"repository":{"type":"Type","size":"Taille","invalidjson":"Cha\u00eene JSON non valide","nofilesattached":"Aucun fichier joint","filepicker":"S\u00e9lecteur de fichiers","logout":"D\u00e9connexion","nofilesavailable":"Aucun fichier disponible","norepositoriesavailable":"D\u00e9sol\u00e9, aucun de vos d\u00e9p\u00f4ts actuels ne peut retourner de fichiers dans le format requis.","fileexistsdialogheader":"Le fichier existe","fileexistsdialog_editor":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint au texte que vous modifiez.","fileexistsdialog_filemanager":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint","renameto":"Renommer \u00e0 {$a}","referencesexist":"Ce fichier est utilis\u00e9 comme source par {$a} alias.","select":"S\u00e9lectionnez"},"block":{"addtodock":"D\u00e9placer vers le dock","undockitem":"Retirer cet \u00e9l\u00e9ment du dock","dockblock":"Mettre le bloc {$a} dans le dock","undockblock":"\u00d4ter du dock le bloc {$a}","undockall":"Tout retirer du dock","hidedockpanel":"Cacher le panneau du dock","hidepanel":"Cacher le dock"},"langconfig":{"thisdirectionvertical":"btt"},"admin":{"confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var navtreeexpansions76847 = [{"id":"expandable_branch_0_courses","key":"courses","type":0}];
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"76847","instance":"76847","candock":true,"courselimit":"20","expansionlimit":0});
+});
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"76848","instance":"76848","candock":true});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst76847","title":"Navigation","preference":"block76847hidden","tooltipVisible":"Cacher bloc Navigation","tooltipHidden":"Afficher bloc Navigation"});
+ M.util.js_pending('random56177b407458a3'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random56177b407458a3'); });
+
+});
+//]]>
+</script>
+
+</div>
+<div style="clear:both"></div>
+<footer>
+	<div id="footerContenu">
+		<div id="footerLeft">
+			<div class="col">
+				<h4>
+					Assistance				</h4>
+				<ul>
+					<li>+41 (0)58 900 01 17 </li>
+					<li class="des">9:00-12:00 13:30-17:00</li>
+					<li><a href="mailto:cyberlearn@hes-so.ch?subject=Moodle Homepage Message" target="_blank" >cyberlearn@hes-so.ch</a></li>
+				</ul>
+				
+				
+				
+				
+				
+			</div>
+			<div class="col colLast">
+				<h4>Liens</h4>
+				<ul>
+					<li><a href="http://cyberlearn.hes-so.ch/documents/help.php" target="_blank">Documents</a></li>
+					<li><a href="http://journal.cyberlearn.ch/index.php?c=6" target="_blank">Videos</a></li>
+				</ul>
+				
+			</div>
+			<div style="clear:both"></div>
+			
+		</div>
+		<div id="footerRight">
+			<div>
+				<h4>Rejoignez-nous!</h4>
+				
+				<a id="btnFacebook" class="btnRS" title="Facebook" href="http://www.facebook.com/cyberlearn" target="_blank"></a>
+				<a id="btnTwitter" class="btnRS" title="Twitter" href="http://www.twitter.com/thecyberlearn" target="_blank"></a>
+				<a id="btnYoutube" class="btnRS" title="Youtube" href="http://www.youtube.com/user/TheCyberlearn" target="_blank"></a>
+				<a id="btnSwitch" class="btnRS" title="SWITCH Tube" href="https://tube.switch.ch/profiles/2100" target="_blank"></a>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</footer></body>
+</html>
