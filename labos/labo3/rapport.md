@@ -2,3 +2,4 @@
 
 ## Introduction
 
+## Algorithmes utilisés
