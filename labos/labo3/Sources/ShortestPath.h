@@ -52,6 +52,7 @@ public:
 	// Renvoie la liste ordonnee des arcs constituant un chemin le plus court du
 	// sommet source à v.
 	Edges PathTo(int v) {
+        // 
 		/* A IMPLEMENTER */
 	}
 
@@ -69,7 +70,24 @@ public:
 	typedef typename BASE::Edge Edge;
 	typedef typename BASE::Weight Weight;
 
+    // Faire un parcours selon l'algo de dijkstra
+    //
 	DijkstraSP(const GraphType& g, int v)  {
+        this->edgeTo.reserve(g.V()); // initialisation des vecteurs nuls
+        // Initialiser les vecteurs de distance à l'infini et le sommet initial à 0
+        for(int i=0; i < g.V(); ++i)
+        {
+            this->distanceTo[i] = std::numeric_limits<Weihgt>::max();
+        }
+        this->distanceTo[v] = 0;
+        this->edgeTo[v] = Edge(v,v,0);
+
+        // Selection des sommets et relachement des arcs sortants
+		for(int i=0;i<g.V();++i)
+			g.forEachEdge([this](const Edge& e){
+				this->relax(e);
+			});
+
 		/* A IMPLEMENTER */
 	}
 };
@@ -112,7 +130,7 @@ public:
 
 		this->edgeTo[v] = Edge(v,v,0);
 		this->distanceTo[v] = 0;
-		
+
 		for(int i=0;i<g.V();++i)
 			g.forEachEdge([this](const Edge& e){
 				this->relax(e);
