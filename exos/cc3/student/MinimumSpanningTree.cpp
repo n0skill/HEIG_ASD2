@@ -117,6 +117,49 @@ public:
     
     // Algorithme de Boruvka. Implemente avec UnionFind
     static EdgeList BoruvkaUnionFind(const GraphType& g) {
+        EdgeList minimalSpaningTree;
+        UnionFind uf(g.V());
+        int t = 1;
+
+        while(t < g.V() && len(minimalSpaningTree) < g.V()-1)
+        {
+            EdgeList closest(g.V());
+
+            this->edgeTo.reserve(g.V());
+
+            g.forEachVertex([&](const Edge& e)
+            {
+                Edge v = e.Either();
+                Edge w = e.Other();
+                Edge i = uf.Find(v);
+                Edge j = uf.Find(w);
+
+                if(i!=j)
+                {
+                    if(closest[i] == NULL || e < closest[i])
+                    {
+                        closest[i] = e;
+                    }
+                    if(closest[j] == NULL || e < closest[j])
+                    {
+                        closest[j] = e;
+                    }
+                }
+            });
+
+            // 
+            g.ForEachAdjacentEdges([&](int i)
+            {
+                Edge e = closest[i];
+                if(e is )
+                {
+                    int v = e.Either();
+                    int w = e.Other();
+
+                }
+
+            }
+        }
         /* A IMPLEMENTER */
     }
     
