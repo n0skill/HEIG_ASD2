@@ -28,7 +28,6 @@ public:
 protected:
     // v1 et v2 sont les deux sommets de l'arc/arête
     int v1,v2;
-    
     // weight en est le poids
     WeightType weight;
     
